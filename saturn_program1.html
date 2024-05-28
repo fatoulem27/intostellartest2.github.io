@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토성 여행 상품 - INTOSTELLAR</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style_saturn.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><b>인투스텔라</b></a>
+        </div>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
+            <button id="searchButton">검색</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="#" onClick="window.location.href='travelto.html'">여행 상품</a></li>
+                <li><a href="#">프로모션</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destination-detail">
+            <h1>토성 행성 탐험</h1>
+            <div class="destination-info">
+                <img src="image2.jpg" alt="토성">
+                <div class="description">
+                    <h3><b>[인천출발]토성 직항 | 토성 대기 | 육각형 구름</b></h3>
+                    <p>토성의 대기와 아름다운 육각형 구름을 체험할 수 있는 여행 상품입니다.<br>토성 궤도를 도는 우주선을 타고 환상적인 우주 여행을 경험해보세요.</p>
+                    <ul><b>
+                        <li>SpaceY Y360 왕복 우주선 / 55박 56일/ 특식 2회</li>
+                        <li>여행 내용: 토성 통과 / 육각형 구름</li>
+                        <li>인원: 3인 ~ 9인</li>
+                        <li>가격: <span style="color: rgb(3, 169, 3)">4,187,500,000원</span> ~</li>
+                    </b></ul>
+                    <button onClick="window.location.href='booking.html'">예약하기</button>
+                </div>
+            </div>
+            <div class="destination-info-footer"><p>***아래 여행 정보를 정독하세요***</p></div>
+        </section>
+        <hr>
+        <section class="travel-itinerary">
+            <h2>여행 일정</h2>
+            <ul class="itinerary-list">
+                <li>
+                    <div class="day">1일차 ~ 25일차</div>
+                    <div class="activity">
+                        <img src="day1_image.jpg" alt="우주선 출발">
+                        <p><b>&bull; 인천 &#8594; 토성: SpaceY Y360으로 이동</b></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">26일차</div>
+                    <div class="activity">
+                        <img src="day26_image.jpg" alt="토성 도착">
+                        <p><b>&bull; 토성 도착</b></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">27일차</div>
+                    <div class="activity">
+                        <img src="day27_image.jpg" alt="토성 궤도 돌기">
+                        <p><b>&bull; 토성 궤도 따라서 돌기</b></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">28일차 ~ 29일차</div>
+                    <div class="activity">
+                        <img src="day28_image.jpg" alt="토성 통과">
+                        <p><b>&bull; 경로 결정 후 토성 통과</b></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">30일차</div>
+                    <div class="activity">
+                        <img src="day30_image.jpg" alt="토성 육각형">
+                        <p><b>&bull; 토성 육각형 구름으로 이동</b></p>
+                        <p><b>&bull; 육각형 구름 위에서 우주 유영</b></p>
+                        <p><b>&bull; 사진 촬영</b></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">31일차 ~ 56일차</div>
+                    <div class="activity">
+                        <img src="day36_image.jpg" alt="지구귀환">
+                        <p><b>&bull; 47일차: 목성 스윙바이</b></p>
+                        <p><b>&bull; 56일차: 지구 귀환</b></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section class="additional-info">
+            <h2>집합 장소</h2>
+            <p>인천 우주센터</p>
+            <h2>준비물</h2>
+            <p>신분증, 통화, 운동 기구, 위생용품, 보조 배터리, 개인처방 약, 의료 기록</p>
+            <p>***나머지 필수 용품은 우주선에 배치되어 있습니다***</p>
+            <h2>식사</h2>
+            <p>전투 식량 제공</p>
+            <p>26일차, 29일차는 토성 특식 제공</p>
+            <h2>숙소</h2>
+            <p>SpaceY Y360 우주선 내부 숙소</p>
+        </section>
+        <button id="cautionButton">여행 시 유의 사항</button>
+        <div id="cautionPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <h2>여행 시 유의 사항</h2>
+                <p>1. 외부 활동 시 우주복과 같은 안전 장비를 항상 착용하세요.</p>
+                <p>2. 토성과 토성의 위성의 압력과 온도에 노출될 수 있으므로 주기적으로 우주복을 점검하세요.</p>
+                <p>3. 안전 로프의 연결 상태를 항상 확인하세요.</p>
+                <p>4. 통신이 불안정할 경우 즉시 우주선으로 귀환하세요.</p>
+                <p>5. 가이드의 안내에 따라 이동하세요.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; INTOSTELLAR. All rights reserved.</p>
+    </footer>
+
+    <script src="script_saturn.js"></script>
+</body>
+</html>
