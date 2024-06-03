@@ -1,0 +1,157 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" onClick="window.location.href='index.html'"><b>인투스텔라</b></a>
+        </div>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
+            <button id="searchButton">검색</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onClick="window.location.href='index.html'">홈</a></li>
+                <li><a href="#" onClick="window.location.href='travelto.html'">여행 상품</a></li>
+                <li><a href="#" onClick="window.location.href='rocket.html'">프로모션</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="rocket-info">
+            <h1 class="text">SpaceY Y360: 반물질 추진 로켓</h1>
+            <p class="information">SpaceY Y360은 반물질 추진 시스템을 사용하여 광속의 0.43%에 도달할 수 있는 혁신적인 로켓입니다.</p>
+            <h2 class="text">로켓의 원리</h2>
+            <p class="information">
+                반물질 추진은 반물질과 물질이 충돌할 때 발생하는 에너지를 이용합니다. 이 충돌은 엄청난 양의 에너지를 방출하며, 이는 로켓을 추진하는 데 사용됩니다. Y360은 이 기술을 통해 기존의 화학적 로켓 엔진보다 훨씬 높은 효율과 속력을 자랑합니다.
+            </p>
+            <h2 class="text">최대 속력</h2>
+            <p class="information">
+                SpaceY Y360은 최대 속력으로 광속의 0.43%까지 도달할 수 있습니다.
+            </p>
+            <img src="Y360.jpg" alt="SpaceY Y360 로켓" class="rocket-image">
+        </section>
+    </main>
+    
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #00467f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 3em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-right: 5px;
+    width: 300px;
+}
+
+.search button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.main {
+    padding: 20px;
+}
+
+.rocket-info {
+    margin: 20px;
+    background-color: #f0f6ff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.rocket-info h1, .rocket-info h2 {
+    color: #00467f;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.rocket-info p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.rocket-image {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const searchButton = document.getElementById('searchButton');
+    const searchInput = document.getElementById('searchInput');
+
+    searchButton.addEventListener('click', () => {
+        redirectToSearchUnsupportedPage();
+    });
+
+    searchInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            redirectToSearchUnsupportedPage();
+        }
+    });
+
+    function redirectToSearchUnsupportedPage() {
+        window.location.href = 'index_nosearch.html';
+    }
+});
+</script>
